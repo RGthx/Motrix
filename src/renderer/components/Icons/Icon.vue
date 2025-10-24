@@ -1,6 +1,5 @@
 <template>
   <svg
-    version="1.1"
     :class="klass"
     :role="label ? 'img' : 'presentation'"
     :aria-label="label"

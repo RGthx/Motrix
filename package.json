@@ -1,18 +1,24 @@
 {
   "name": "Motrix",
-  "version": "1.8.19",
+  "version": "1.8.30",
   "description": "A full-featured download manager",
   "homepage": "https://motrix.app",
-  "author": {
-    "name": "Dr_rOot",
-    "email": "agalwood.net@gmail.com"
-  },
+  "authors": [
+    {
+      "name": "Dr_rOot",
+      "email": "agalwood.net@gmail.com"
+    },
+    {
+      "name": "RGthx",
+      "email": "rgthx@qq.com"
+    }
+  ],
   "copyright": "Copyright© Dr_rOot",
   "license": "MIT",
   "main": "./dist/electron/main.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:agalwood/Motrix.git"
+    "url": "git@github.com:RGthx/Motrix.git"
   },
   "scripts": {
     "release": "npm run build --publish onTagOrDraft",
@@ -36,7 +42,7 @@
   },
   "dependencies": {
     "node-fetch": "^2.6.1",
-    "ws": "^8.13.0"
+    "ws": "8.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",
@@ -48,13 +54,13 @@
     "@bany/curl-to-json": "^1.2.7",
     "@electron/notarize": "^1.2.3",
     "@electron/osx-sign": "^1.0.4",
-    "@electron/remote": "^2.0.9",
+    "@electron/remote": "^2.1.2",
     "@motrix/multispinner": "^0.2.4",
     "@motrix/nat-api": "^0.3.4",
     "@panter/vue-i18next": "^0.15.2",
     "@vue/eslint-config-standard": "^6.1.0",
     "ajv": "^8.12.0",
-    "axios": "^1.4.0",
+    "axios": "1.12.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^9.1.2",
     "babel-plugin-component": "^1.1.1",
@@ -67,13 +73,13 @@
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^5.0.0",
     "del": "^6.1.1",
-    "electron": "^22.3.9",
+    "electron": "30.0.5",
     "electron-builder": "^24.4.0",
     "electron-devtools-installer": "^3.2.0",
     "electron-is": "^3.0.0",
     "electron-log": "^4.4.8",
     "electron-store": "^8.1.0",
-    "electron-updater": "^6.1.0",
+    "electron-updater": "6.3.0-alpha.6",
     "element-ui": "^2.15.13",
     "eslint": "^7.32.0",
     "eslint-friendly-formatter": "^4.0.1",

@@ -4,6 +4,9 @@ import { initialize } from '@electron/remote/main'
 
 import Launcher from './Launcher'
 
+// 设置EventEmitter默认最大监听器数量，避免内存泄漏警告
+require('events').EventEmitter.defaultMaxListeners = 100
+
 /**
  * initialize the main-process side of the remote module
  */

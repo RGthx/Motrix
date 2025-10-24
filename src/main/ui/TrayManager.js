@@ -185,7 +185,9 @@ export default class TrayManager extends EventEmitter {
   }
 
   handleTrayClick = (event) => {
-    global.application.toggle()
+    if (global.application) {
+      global.application.toggle()
+    }
   }
 
   handleTrayDbClick = (event) => {

@@ -113,6 +113,16 @@ export default class Engine {
       extraConfig['seed-ratio'] = 0
       delete extraConfig['seed-time']
     }
+
+    // Ensure max-connection-per-server is within valid range (1-16)
+    if (extraConfig['max-connection-per-server']) {
+      const maxConn = parseInt(extraConfig['max-connection-per-server'])
+      if (maxConn < 1 || maxConn > 16) {
+        // Set to default value if out of range
+        extraConfig['max-connection-per-server'] = 16
+      }
+    }
+
     console.log('extraConfig===>', extraConfig)
 
     const extra = transformConfig(extraConfig)
